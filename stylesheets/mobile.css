@@ -1,0 +1,237 @@
+/* Set table width*/
+table {
+    width:40%;
+    margin-left: auto;
+    margin-right: auto;
+    float:left;
+}
+
+.linkActive{
+    background-color:#339a33 ;
+}
+/* Set borders, width, and height of cells, headers, and tables*/
+table, th, td {
+    border: 1px solid;
+    text-align: center;
+    width: 600px;
+    height: 30px;
+    color: #ffffff;
+    
+    
+}
+
+/* "The {Code Club}
+The best club at the college  */
+h1{
+
+    margin: 0px auto 0px auto;
+    padding: 30px;
+    font-size: 24px;
+    background-color: #339a33;
+    color: #e4e1e0;
+
+}
+
+/* Font and margin sizes for h1 h2 h4 */
+h1, h2, h4{
+    font-family:'Lucida Console', Courier, monospace;
+    font-size: 30px;
+    margin-bottom: 0%;
+    margin-top: 5%;
+
+}
+
+/* Font and margin sizes for h3  */
+h3{
+    padding-left: 16%;
+    padding-top: 1%;
+    font-family:'Lucida Console', Courier, monospace;
+}
+
+/* Calendar Page h4 formatting */
+.calendarH4{
+    float:left;
+    padding-top: 5%;
+    position: absolute;
+    
+}
+
+/* Image formatting on mainpage */
+img{
+    float: left;
+    padding-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Formatting for ul h1 h2 h4*/
+ul, h1, h2, h4{
+    text-align: center;
+    margin-top: 1.5%;
+    padding: 0%;
+    margin: 0%;
+    
+}
+
+/* Formatting for calendar UL */
+.calendarUL{
+    position: relative;
+    padding-top: 7%;
+   
+}
+/* Formatting for calendar LIs */
+.calendarLI{
+    list-style-type:circle;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+/* Form navigational title bar  */
+.titleBar{
+ 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    
+}
+
+/* Format links in title bar */ 
+.listLinks{
+    float:left;
+    position: relative;
+    left: 30%;
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+    font-size: 25px;
+}
+
+/* Color and format links in title bar */
+.listLinksColor {
+   
+    display: block;
+    text-align: center;
+    padding: 30px 117px;
+    color: #f9f7f7;
+    text-decoration: none;  
+}
+
+/* Add hover function to title links */
+li a:hover{
+    background-color: #9e9e9e;
+}
+
+/* Formatting for club information  */
+main > p{
+    padding-left: 16%;
+}
+
+/* Further formatting for club information  */
+main, li{
+    text-align:left;
+}
+
+/* Set width, and height of image(to fit to cell)*/
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*Main background color*/
+body{
+    background-image: linear-gradient(to left, #6f6f6f, #339a33);
+}
+
+/* Formatting for calendar footer */
+.calendarFooter{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding-top:15%;
+    position: absolute;
+}
+
+
+/* Copyright text formatting */
+footer > p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    float:left;
+    padding-top:5%;
+    position: fixed;
+}
+
+/*Signup header formatting*/
+#signUpHeader{
+   
+    text-align: center;
+    margin-left: 5%;
+    padding-top: 1%;
+}
+
+/* Sign up paragraph formatting*/
+#signUpParagraph{
+    text-align: center;
+    margin-right: 4.5%;
+    text-indent: -1410px;
+
+}
+
+
+/* Start of new mobile-optimized CSS code class: */
+/* This targets devices with screen widths of up to 600px */
+@media screen and (max-width: 600px) {
+
+    /* Modify navigation bar layout for mobile */
+    .titleBar {
+        flex-direction: column;
+    }
+
+    /* Make sure all form inputs span the width of the device */
+    input[type=text], 
+    input[type=password], 
+    textarea, 
+    select {
+        width: 100%;
+        box-sizing: border-box; 
+    }
+
+    /* Increase size of text to be easily readable on mobile devices */
+    h2, p, li {
+        font-size: 18px;
+    }
+
+    /* Increase button sizes for better touch experience */
+    input[type=submit],
+    input[type=reset] {
+        padding: 12px;
+    }
+    
+    /* Adjust table width for mobile */
+    table {
+        width: 100%;
+    }
+
+    /* Reduce size of headers on mobile for better readability */
+    h1, h2, h3, h4 {
+        font-size: 20px;
+    }
+
+    /* Adjust listLinks for mobile */
+    .listLinks {
+        float: none;
+        position: static;
+    }
+
+    /* Adjust link padding for mobile */
+    .listLinksColor {
+        padding: 15px 30px;
+    }
+
+    /* Adjust SignUp Header and Paragraph for mobile */
+    #signUpHeader, #signUpParagraph {
+        margin-left: 0;
+        text-indent: 0;
+    }
+}
