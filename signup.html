@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title> The Code Club </title>
+
+    <meta charset="UTF-8">
+		<meta name="description" content="Code Club">
+		<meta name="keywords" content="School, club, college">
+		<meta name="author" content="Aramis M. Figueroa">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="stylesheets/mobile.css">
+	
+</head>
+
+<body>
+    
+    <nav>
+	
+        <!--Navigation for future links-->
+        <ul class="titleBar">
+            <li class="listLinks"><a class="listLinksColor " href="mainpage.html"> Home </a></li>
+            <li class="listLinks"><a class="listLinksColor" href="calendarpage.html"> Calendar </a></li>
+            <li class="listLinks"><a class="listLinksColor linkActive" href="signup.html"> Sign-up </a></li>
+        </ul>
+        
+    </nav>
+
+    <main>
+        
+        <!--Code Club Sign-up Page Description-->
+        <h2 id="signUpHeader"> Welcome to the Code Club sign-up page!</h2>
+        <p id="signUpParagraph"> In order to sign up for the Code Club, 
+        please fill out the form below containing the following categories:</p>
+        <ul id="signUpConfig">
+            <li >* Personal Info</li>
+            <li >* College Info</li>
+            <li >* Reason for Joining</li>
+        </ul>
+
+        <br>
+
+        <!--Login Info fieldset-->
+        <fieldset>
+        
+        <legend>Login Information</legend>
+        <!--First Name, Last Name, and Password-->
+        <form name="sign-up" action="signup.html" method="post">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" size="40" placeholder="Enter your first name here"><br><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" size="40" placeholder="Enter your last name here"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" size="15" maxlength="4"><br><br>
+        <p></p>
+        </fieldset>
+
+        <!--Personal Info fieldset-->
+        <fieldset>
+
+        <!--Personal Info-->
+        <legend>Personal Info</legend>
+
+        <!--Gender-->
+        What is your gender?
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        
+        <br>
+        <br>
+
+        <!--Age-->
+        <label for="above18"> Are you above 18 years old?</label>
+        <input type="radio" name="email-list" value="yes">Yes 
+        <input type="radio" name="email-list" value="no">No
+        
+        <br>
+        <br>
+
+        <!--Languages Interested In-->
+        What programming languages do you know?<br>
+        Select all that apply: <br>
+        <input type="checkbox" name="Python" value="checked"> Python <br>
+        <input type="checkbox" name="Java" value="checked"> Java <br>
+        <input type="checkbox" name="C" value="checked"> C <br>
+        <input type="checkbox" name="C++" value="checked"> C++ <br>
+        <input type="checkbox" name="C#" value="checked"> C# <br>
+        <input type="checkbox" name="HTML" value="checked"> HTML <br>
+        <input type="checkbox" name="CSS" value="checked"> CSS <br>
+        <input type="checkbox" name="JavaScript" value="checked"> JavaScript <br>
+
+        </fieldset> <!--1st fieldset close-->
+
+        <!--College Info fieldset-->
+        <fieldset>
+        <!--College Info-->
+        <legend>College Info</legend>
+
+        <!--GPA-->
+        <label for="GPA">GPA:</label>
+        <input type="text" id="GPA" name="GPA" size="15" maxlength="4"><br><br>
+
+        <!--Major-->
+        <label for="Major">Major:</label>
+        <input type="text" id="Major" name="Major" size="40" placeholder="Enter your major here"><br><br>
+
+        <!--Minor-->
+        <label for="Minor">Minor:</label>
+        <input type="text" id="Minor" name="Minor" size="40" placeholder="Enter your minor here"><br><br>
+
+        <!--College Name-->
+        <label for="College">College:</label>
+        <input type="text" id="College" name="College" size="40" placeholder="Enter your college here"><br><br>
+
+        </fieldset> <!--2nd fieldset close-->
+
+        <!--Reason for Joining-->
+        <fieldset>
+        <legend>Reason for Joining</legend>
+
+        <br>
+
+        <!--Reason for Joining textbox-->
+        Let us know why you would like to join the Code Club!<br>
+        <textarea id="Comments" placeholder="Type anything here..." cols="44" rows="4"></textarea><br><br>
+
+        <!--Upload college portfolio input-->
+        Upload your College Portfolio below:<br>
+        <label for="myfile">Select a file:</label> 
+        <input type="file" id="chosenFile" name="chosenFile">
+        </fieldset>
+
+
+        <!--Submit Button-->
+        <input type="submit" id="submit-button" value="Submit">
+
+        <!--Reset Button-->
+        <input type="reset" value="Reset">
+        </form>
+    </main>
+
+    <!--Javascript to display pop-up when user clicks submit button-->
+    <script src="js/funscript.js"></script>
+    <script> 
+        submission();
+    </script>
+</body>
+
+<footer>
+
+    <p>&copy; copyright 2023 Aramis M. Figueroa <i><a href="mailto: figua46@mail.broward.edu">contact</a></i></p>
+
+</footer>
+
+</html>
