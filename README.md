@@ -1,2 +1,4 @@
-# HTML-CSS-Javascript
-This is a repository showcasing my most pivotal work so far in the HTML, CSS, and Javascript languages. (See branches of this repository for the different websites)
+# Coders-Club
+This is an imaginary website for a college club for programmers called "Coders Club".
+This site includes a home page, a calendar page, and a sign-up page!
+The goal of this site is to demonstrate my working knowledge of HTML, CSS, and Javascript.
